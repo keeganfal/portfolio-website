@@ -1,5 +1,169 @@
-* {
-  margin: 0;
-  padding: 0;
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Fonts import */
+.header {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.491rem;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 5vh;
+}
+.header #titleicon {
+  color: #BAE8E8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.header .header__title {
+  color: #170F49;
+  text-decoration: none;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.header #toggle {
+  display: none;
+}
+.header #toggle:checked + .header__navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .header__togglearea {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  color: #2C698D;
+  display: flex;
+  justify-content: flex-end;
+}
+.header .header__navbar {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-family: "Inter", sans-serif;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header .header__navbar .header__navitem {
+  color: #8C9CB1;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+.header .header__navbar .header__navitem--intouch-button {
+  font-weight: 700;
+  color: #170F49;
+  background-color: #BAE8E8;
+  border: 2px solid #170F49;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .header #toggle {
+    display: none;
+  }
+  .header .header__togglearea {
+    border: 2px solid black;
+    color: #2C698D;
+    padding: 10px;
+    display: none;
+    justify-content: flex-end;
+  }
+  .header .header__navbar {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
