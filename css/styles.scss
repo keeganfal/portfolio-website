@@ -97,6 +97,8 @@ $navy: #2C698D;
     padding-right: 5vh;
     padding-top: 5vh;
 
+    align-items: center;
+
     #titleicon {
         color: $aqua;
         grid-row-start: 1;
@@ -106,6 +108,8 @@ $navy: #2C698D;
     }
 
     .header__title {
+        padding-left: 50px;
+
         color: $deep-navy;
         text-decoration: none;
 
@@ -121,7 +125,8 @@ $navy: #2C698D;
 
     #toggle:checked + .header__navbar{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+    
     }
 
 
@@ -143,22 +148,30 @@ $navy: #2C698D;
        
         font-family: 'Inter', sans-serif;
         display: none;
-        justify-content: center;
-        align-items: center;
+        
+        align-items:center;
         flex-direction: column;
+
+        
 
         .header__navitem {
             color: $slate-gray;
             text-decoration: none;
             font-weight: 400;
             font-size: 1.125rem;
+            padding-top: 6px;
+            padding-bottom: 6px;
 
             &--intouch-button {
                 font-weight: 700;
                 color: $deep-navy;
                 background-color: $aqua;
-                border: 2px solid $deep-navy;
+                border: 1.5px solid $deep-navy;
                 border-radius: 5px;
+                font-size: 1rem;
+                padding: 6px;
+                padding-left: 4px ;
+                padding-right: 4px ;
             }
         }
     }
@@ -166,6 +179,10 @@ $navy: #2C698D;
 
 @media screen and (min-width: 768px) {
     .header {
+        padding-left: 10vh;
+        padding-right: 10vh;
+        padding-top: 5vh;
+
         #toggle {
             display: none;
         }
@@ -187,8 +204,7 @@ $navy: #2C698D;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items:flex-start;
-            
+            align-items: center;
         }
     }
 

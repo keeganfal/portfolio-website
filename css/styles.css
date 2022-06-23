@@ -88,6 +88,7 @@ select {
   padding-left: 5vh;
   padding-right: 5vh;
   padding-top: 5vh;
+  align-items: center;
 }
 .header #titleicon {
   color: #BAE8E8;
@@ -97,6 +98,7 @@ select {
   grid-column-end: 2;
 }
 .header .header__title {
+  padding-left: 50px;
   color: #170F49;
   text-decoration: none;
   grid-row-start: 1;
@@ -109,7 +111,7 @@ select {
 }
 .header #toggle:checked + .header__navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .header .header__togglearea {
   grid-row-start: 1;
@@ -127,7 +129,6 @@ select {
   grid-column-end: 3;
   font-family: "Inter", sans-serif;
   display: none;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -136,16 +137,27 @@ select {
   text-decoration: none;
   font-weight: 400;
   font-size: 1.125rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .header .header__navbar .header__navitem--intouch-button {
   font-weight: 700;
   color: #170F49;
   background-color: #BAE8E8;
-  border: 2px solid #170F49;
+  border: 1.5px solid #170F49;
   border-radius: 5px;
+  font-size: 1rem;
+  padding: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 5vh;
+  }
   .header #toggle {
     display: none;
   }
@@ -164,6 +176,6 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 }
