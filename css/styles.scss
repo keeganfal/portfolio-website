@@ -113,20 +113,91 @@ $light-grey: #F7FAFA;
         margin: 4vh;
         padding: 40px;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
         .main__intro-paragraph {
             color: $slate-gray;
+            font-size: 20px;
         }
 
         .main__intro-heading {
             color: $deep-navy;
+            font-size: 4rem;
         }
 
         .main__intro-button {
+            font-size: 20px;
+            font-weight: 700;
             background: $aqua;
+            color: $deep-navy;
             border: 2px solid $deep-navy;
-            box-shadow: 0px 20px 40px rgba(185, 192, 192, 0.19);
+            box-shadow: 2px 2px $deep-navy;
             border-radius: 7px;
+            width: 321px;
+            height: 78px;
         }
+    }
+
+    .main__skills {
+        font-family: 'Inter', sans-serif;
+        margin: 4vh;
+        padding: 40px;
+
+        .main__skills-title {
+            color: $deep-navy;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main__skill-grid-container {
+            display: grid;
+            grid-template-columns: 3;
+            grid-template-rows: 3;
+            justify-content: space-around;
+
+            grid-gap: 30px;
+
+            .main__skill-item {
+                color: $aqua;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+    
+                .main__skill-name {
+                    color: $slate-gray;
+                    font-size: 20px;
+                }
+            }
+
+            #html-vector {
+                grid-row-start: 0;
+                grid-row-end: 1;
+                grid-column-start: 0;
+                grid-column-end: 1;
+            }
+
+            #css-vector {
+                grid-row-start: 0;
+                grid-row-end: 1;
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+
+            #git-vector {
+                grid-row-start: 0;
+                grid-row-end: 1;
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+
+
+        }
+
+        
     }
 }
 
@@ -160,5 +231,19 @@ $light-grey: #F7FAFA;
             align-items: center;
         }
     }
+
+    
+.main {
+    .main__intro {
+        .main__intro-paragraph {
+            font-size: 32px;
+        }
+
+        .main__intro-heading {
+            font-size: 5rem;
+        }
+    }
+}
+
 
 }
