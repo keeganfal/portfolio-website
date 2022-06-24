@@ -190,6 +190,7 @@ select {
 .main .main__skills .main__skills-title {
   color: #170F49;
   font-size: 2rem;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
 }
@@ -261,5 +262,59 @@ select {
   }
   .main .main__intro .main__intro-heading {
     font-size: 5rem;
+  }
+  .main .main__skills .main__skill-grid-container #html-vector {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 0;
+    grid-column-end: 1;
+  }
+  .main .main__skills .main__skill-grid-container #css-vector {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .main .main__skills .main__skill-grid-container #git-vector {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .main .main__skills .main__skill-grid-container #github-vector {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .main .main__skills .main__skill-grid-container #js-vector {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+  .main .main__skills .main__skill-grid-container #sass-vector {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
+  .main .main__skills .main__skill-grid-container #bem-vector {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 6;
+    grid-column-end: 7;
+  }
+  .main .main__skills .main__skill-grid-container #react-vector {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 7;
+    grid-column-end: 8;
+  }
+  .main .main__skills .main__skill-grid-container #bootstrap-vector {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 8;
+    grid-column-end: 9;
   }
 }
