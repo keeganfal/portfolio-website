@@ -1,3 +1,4 @@
+/* Import reset */
 /* Box sizing rules */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;700&display=swap");
 *,
@@ -87,7 +88,7 @@ select {
   grid-template-rows: 1;
   padding-left: 5vh;
   padding-right: 5vh;
-  padding-top: 5vh;
+  padding-top: 3vh;
   align-items: center;
 }
 .header #titleicon {
@@ -150,6 +151,25 @@ select {
   padding: 6px;
   padding-left: 4px;
   padding-right: 4px;
+}
+
+.main .main__intro {
+  font-family: "Inter", sans-serif;
+  background-color: #F7FAFA;
+  margin: 4vh;
+  padding: 40px;
+}
+.main .main__intro .main__intro-paragraph {
+  color: #8C9CB1;
+}
+.main .main__intro .main__intro-heading {
+  color: #170F49;
+}
+.main .main__intro .main__intro-button {
+  background: #BAE8E8;
+  border: 2px solid #170F49;
+  box-shadow: 0px 20px 40px rgba(185, 192, 192, 0.19);
+  border-radius: 7px;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,77 +1,5 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
+/* Import reset */
+@import "./reset";
 
 /* Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;700&display=swap');
@@ -82,6 +10,7 @@ $slate-gray: #8C9CB1;
 $aqua: #BAE8E8;
 $pale-aqua: #E3F6F5;
 $navy: #2C698D;
+$light-grey: #F7FAFA;
 
 
 .header {
@@ -95,7 +24,7 @@ $navy: #2C698D;
     grid-template-rows: 1;
     padding-left: 5vh;
     padding-right: 5vh;
-    padding-top: 5vh;
+    padding-top: 3vh;
 
     align-items: center;
 
@@ -173,6 +102,30 @@ $navy: #2C698D;
                 padding-left: 4px ;
                 padding-right: 4px ;
             }
+        }
+    }
+}
+
+.main {
+    .main__intro {
+        font-family: 'Inter', sans-serif;
+        background-color: $light-grey;
+        margin: 4vh;
+        padding: 40px;
+
+        .main__intro-paragraph {
+            color: $slate-gray;
+        }
+
+        .main__intro-heading {
+            color: $deep-navy;
+        }
+
+        .main__intro-button {
+            background: $aqua;
+            border: 2px solid $deep-navy;
+            box-shadow: 0px 20px 40px rgba(185, 192, 192, 0.19);
+            border-radius: 7px;
         }
     }
 }
