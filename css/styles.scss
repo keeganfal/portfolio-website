@@ -202,6 +202,36 @@ $light-grey: #F7FAFA;
     }
 }
 
+.footer {
+    display: flex;
+    padding: 3vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    background-color: $deep-navy;
+
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__email {
+        font-family: 'Inter', sans-serif;
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+        
+    }
+
+    .footer__social-links{
+        #github-footer{
+            color: $aqua;
+        }
+    
+        #linkedin-footer{
+            color: $aqua;
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
     .header {
         padding-left: 10vh;

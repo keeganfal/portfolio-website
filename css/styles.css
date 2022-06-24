@@ -230,6 +230,29 @@ select {
   grid-column-end: 3;
 }
 
+.footer {
+  display: flex;
+  padding: 3vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  background-color: #170F49;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__email {
+  font-family: "Inter", sans-serif;
+}
+.footer .footer__email a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer .footer__social-links #github-footer {
+  color: #BAE8E8;
+}
+.footer .footer__social-links #linkedin-footer {
+  color: #BAE8E8;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     padding-left: 10vh;
