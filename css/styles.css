@@ -78,6 +78,10 @@ select {
   }
 }
 /* Fonts import */
+body {
+  scroll-behavior: smooth;
+}
+
 .header {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
@@ -199,12 +203,11 @@ select {
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
-}
-.main .main__skills .main__skills-title:hover {
-  -webkit-text-decoration: underline #BAE8E8 wavy 5px;
-          text-decoration: underline #BAE8E8 wavy 5px;
+  -webkit-text-decoration: underline #BAE8E8 solid 10px;
+          text-decoration: underline #BAE8E8 solid 10px;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+  text-underline-offset: -15px;
 }
 .main .main__skills .main__skill-grid-container {
   display: grid;
@@ -252,12 +255,11 @@ select {
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
-}
-.main .main__my-projects .main__my-projects-title:hover {
-  -webkit-text-decoration: underline #BAE8E8 wavy 5px;
-          text-decoration: underline #BAE8E8 wavy 5px;
+  -webkit-text-decoration: underline #BAE8E8 solid 10px;
+          text-decoration: underline #BAE8E8 solid 10px;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+  text-underline-offset: -15px;
 }
 .main .main__my-projects .main__my-project-grid-container {
   display: grid;

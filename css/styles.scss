@@ -12,6 +12,9 @@ $pale-aqua: #E3F6F5;
 $navy: #2C698D;
 $light-grey: #F7FAFA;
 
+body {
+    scroll-behavior: smooth;
+}
 
 .header {
     font-family: 'DM Sans', sans-serif;
@@ -156,12 +159,12 @@ $light-grey: #F7FAFA;
             padding-bottom: 40px;
             display: flex;
             justify-content: center;
+
+            text-decoration: underline $aqua solid 10px;
+            text-decoration-skip-ink: none;
+            text-underline-offset: -15px;
         }
 
-        .main__skills-title:hover {
-            text-decoration: underline $aqua wavy 5px;
-            text-decoration-skip-ink: none;
-        }
 
         .main__skill-grid-container {
             display: grid;
@@ -221,12 +224,12 @@ $light-grey: #F7FAFA;
             padding-bottom: 40px;
             display: flex;
             justify-content: center;
+
+            text-decoration: underline $aqua solid 10px;
+            text-decoration-skip-ink: none;
+            text-underline-offset: -15px;
         }
 
-        .main__my-projects-title:hover {
-            text-decoration: underline $aqua wavy 5px;
-            text-decoration-skip-ink: none;
-        }
 
         .main__my-project-grid-container {
             display: grid;
