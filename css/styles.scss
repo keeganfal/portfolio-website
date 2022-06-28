@@ -247,6 +247,21 @@ $light-grey: #F7FAFA;
                     font-weight: 400;
                     font-size: 18px;
                 }
+
+                .main__my-project-flexbox {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding-top: 10px;
+                    #code-icon {
+                        color: $deep-navy;
+                    }
+                    #preview-icon {
+                        color: $deep-navy;
+                    }
+                }
+
             }
 
             #project-1 {

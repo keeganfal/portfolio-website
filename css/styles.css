@@ -272,6 +272,19 @@ select {
   font-weight: 400;
   font-size: 18px;
 }
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-flexbox #code-icon {
+  color: #170F49;
+}
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-flexbox #preview-icon {
+  color: #170F49;
+}
 .main .main__my-projects .main__my-project-grid-container #project-1 {
   grid-row-start: 0;
   grid-row-end: 1;
