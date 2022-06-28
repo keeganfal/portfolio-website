@@ -203,9 +203,12 @@ $light-grey: #F7FAFA;
 
     .main__about {
         font-family: 'Inter', sans-serif;
-        margin: 4vh;
-        padding: 40px;
+        // margin: 4vh;
+        padding: 3vh;
+        padding-left: 10vh;
+        padding-right: 10vh;
         background-color: $pale-aqua;
+        width: 100%;
 
         .main__about-title {
             color: $deep-navy;
@@ -309,77 +312,13 @@ $light-grey: #F7FAFA;
         }
     }
 
-    .main__skills {
-        .main__skill-grid-container{
-            #html-vector {
-                grid-row-start: 0;
-                grid-row-end: 1;
-                grid-column-start: 0;
-                grid-column-end: 1;
-            }
-
-            #css-vector {
-                grid-row-start: 0;
-                grid-row-end: 1;
-                grid-column-start: 1;
-                grid-column-end: 2;
-            }
-
-            #git-vector {
-                grid-row-start: 0;
-                grid-row-end: 1;
-                grid-column-start: 2;
-                grid-column-end: 3;
-            }
-
-            #github-vector {
-                grid-row-start: 0;
-                grid-row-end: 1;
-                grid-column-start: 3;
-                grid-column-end: 4;
-            }
-
-            #js-vector {
-                grid-row-start: 0;
-                grid-row-end: 1;
-                grid-column-start: 4;
-                grid-column-end: 5;
-            }
-
-            #sass-vector {
-                grid-row-start: 0;
-                grid-row-end: 1;
-                grid-column-start: 5;
-                grid-column-end: 6;
-            }
-
-            #bem-vector {
-                grid-row-start: 0;
-                grid-row-end: 1;
-                grid-column-start: 6;
-                grid-column-end: 7;
-            }
-
-            #react-vector {
-                grid-row-start: 0;
-                grid-row-end: 1;
-                grid-column-start: 7;
-                grid-column-end: 8;
-            }
-
-            #bootstrap-vector {
-                grid-row-start: 0;
-                grid-row-end: 1;
-                grid-column-start: 8;
-                grid-column-end: 9;
-            }
-        }
-    }
 
     .main__about {
         font-family: 'Inter', sans-serif;
-        margin: 4vh;
-        padding: 40px;
+        //margin: 4vh;
+        padding: 3vh;
+        padding-left: 10vh;
+        padding-right: 10vh;
 
         .main__about-title {
             color: $deep-navy;
@@ -407,5 +346,77 @@ $light-grey: #F7FAFA;
     flex-direction: row;
 }
 
+
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        .main__skills {
+            .main__skill-grid-container{
+                #html-vector {
+                    grid-row-start: 0;
+                    grid-row-end: 1;
+                    grid-column-start: 0;
+                    grid-column-end: 1;
+                }
+    
+                #css-vector {
+                    grid-row-start: 0;
+                    grid-row-end: 1;
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                }
+    
+                #git-vector {
+                    grid-row-start: 0;
+                    grid-row-end: 1;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                }
+    
+                #github-vector {
+                    grid-row-start: 0;
+                    grid-row-end: 1;
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+                }
+    
+                #js-vector {
+                    grid-row-start: 0;
+                    grid-row-end: 1;
+                    grid-column-start: 4;
+                    grid-column-end: 5;
+                }
+    
+                #sass-vector {
+                    grid-row-start: 0;
+                    grid-row-end: 1;
+                    grid-column-start: 5;
+                    grid-column-end: 6;
+                }
+    
+                #bem-vector {
+                    grid-row-start: 0;
+                    grid-row-end: 1;
+                    grid-column-start: 6;
+                    grid-column-end: 7;
+                }
+    
+                #react-vector {
+                    grid-row-start: 0;
+                    grid-row-end: 1;
+                    grid-column-start: 7;
+                    grid-column-end: 8;
+                }
+    
+                #bootstrap-vector {
+                    grid-row-start: 0;
+                    grid-row-end: 1;
+                    grid-column-start: 8;
+                    grid-column-end: 9;
+                }
+            }
+        }
+    }    
 
 }

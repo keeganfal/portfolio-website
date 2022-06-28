@@ -231,9 +231,11 @@ select {
 }
 .main .main__about {
   font-family: "Inter", sans-serif;
-  margin: 4vh;
-  padding: 40px;
+  padding: 3vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
   background-color: #E3F6F5;
+  width: 100%;
 }
 .main .main__about .main__about-title {
   color: #170F49;
@@ -312,6 +314,33 @@ select {
   .main .main__intro .main__intro-heading {
     font-size: 5rem;
   }
+  .main .main__about {
+    font-family: "Inter", sans-serif;
+    padding: 3vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+  .main .main__about .main__about-title {
+    color: #170F49;
+    font-size: 2rem;
+    padding-bottom: 40px;
+  }
+  .main .main__about .main__about-grid-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .main .main__about .main__about-grid-container .main__about-img {
+    max-width: 50%;
+    max-height: 600px;
+    padding-right: 20px;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
   .main .main__skills .main__skill-grid-container #html-vector {
     grid-row-start: 0;
     grid-row-end: 1;
@@ -365,29 +394,5 @@ select {
     grid-row-end: 1;
     grid-column-start: 8;
     grid-column-end: 9;
-  }
-  .main .main__about {
-    font-family: "Inter", sans-serif;
-    margin: 4vh;
-    padding: 40px;
-  }
-  .main .main__about .main__about-title {
-    color: #170F49;
-    font-size: 2rem;
-    padding-bottom: 40px;
-  }
-  .main .main__about .main__about-grid-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .main .main__about .main__about-grid-container .main__about-img {
-    max-width: 50%;
-    max-height: 600px;
-    padding-right: 20px;
-  }
-
-  .footer {
-    flex-direction: row;
   }
 }
