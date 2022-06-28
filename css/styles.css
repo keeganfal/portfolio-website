@@ -229,6 +229,41 @@ select {
   grid-column-start: 2;
   grid-column-end: 3;
 }
+.main .main__my-projects {
+  font-family: "Inter", sans-serif;
+  margin: 4vh;
+  padding: 40px;
+}
+.main .main__my-projects .main__my-projects-title {
+  color: #170F49;
+  font-size: 2rem;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+.main .main__my-projects .main__my-project-grid-container {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  justify-content: space-around;
+  grid-gap: 30px;
+}
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item {
+  color: #BAE8E8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-name {
+  color: #8C9CB1;
+  font-size: 20px;
+}
+.main .main__my-projects .main__my-project-grid-container #project-1 {
+  grid-row-start: 0;
+  grid-row-end: 1;
+  grid-column-start: 0;
+  grid-column-end: 1;
+}
 .main .main__about {
   font-family: "Inter", sans-serif;
   padding: 3vh;
