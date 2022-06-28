@@ -251,6 +251,7 @@ select {
 .main .main__my-projects .main__my-project-grid-container .main__my-project-item {
   color: #BAE8E8;
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
 }
@@ -279,11 +280,23 @@ select {
   width: 100%;
   padding-top: 10px;
 }
-.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-flexbox #code-icon {
-  color: #170F49;
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-flexbox .main__flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-flexbox #preview-icon {
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-flexbox .main__flex-item .main__icon-text {
   color: #170F49;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-flexbox .main__flex-item #code-icon {
+  color: #170F49;
+  padding-left: 5px;
+}
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-flexbox .main__flex-item #preview-icon {
+  color: #170F49;
+  padding-left: 5px;
 }
 .main .main__my-projects .main__my-project-grid-container #project-1 {
   grid-row-start: 0;

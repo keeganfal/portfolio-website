@@ -224,6 +224,7 @@ $light-grey: #F7FAFA;
             .main__my-project-item {
                 color: $aqua;
                 display: flex;
+                justify-content: space-between;
                 align-items: flex-start;
                 flex-direction: column;
 
@@ -254,12 +255,32 @@ $light-grey: #F7FAFA;
                     align-items: center;
                     width: 100%;
                     padding-top: 10px;
-                    #code-icon {
-                        color: $deep-navy;
+
+                    .main__flex-item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .main__icon-text {
+                            color: $deep-navy;
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 600;
+                        }
+    
+                        #code-icon {
+                            color: $deep-navy;
+                            padding-left: 5px;
+                            
+                            
+                        }
+                        #preview-icon {
+                            color: $deep-navy;
+                            padding-left: 5px;
+                        }
+
                     }
-                    #preview-icon {
-                        color: $deep-navy;
-                    }
+
+                    
                 }
 
             }
