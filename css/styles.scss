@@ -45,7 +45,12 @@ $light-grey: #F7FAFA;
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
-}
+    }
+
+    .header__title:hover {
+        text-decoration: underline $aqua wavy 5px;
+        text-decoration-skip-ink: none;
+    }
 
     #toggle {
         display: none;
@@ -153,6 +158,11 @@ $light-grey: #F7FAFA;
             justify-content: center;
         }
 
+        .main__skills-title:hover {
+            text-decoration: underline $aqua wavy 5px;
+            text-decoration-skip-ink: none;
+        }
+
         .main__skill-grid-container {
             display: grid;
             grid-template-columns: 3;
@@ -211,6 +221,11 @@ $light-grey: #F7FAFA;
             padding-bottom: 40px;
             display: flex;
             justify-content: center;
+        }
+
+        .main__my-projects-title:hover {
+            text-decoration: underline $aqua wavy 5px;
+            text-decoration-skip-ink: none;
         }
 
         .main__my-project-grid-container {
@@ -308,6 +323,11 @@ $light-grey: #F7FAFA;
             font-size: 2rem;
             padding-bottom: 40px;
             
+        }
+
+        .main__about-title:hover {
+            text-decoration: underline $aqua wavy 5px;
+            text-decoration-skip-ink: none;
         }
 
         .main__about-grid-container {
