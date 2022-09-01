@@ -1,5 +1,4 @@
-/* Import reset */
-/* Box sizing rules */
+/* Import reset */ /* Box sizing rules */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;700&display=swap");
 *,
 *::before,
@@ -65,7 +64,6 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
 *::before,
 *::after {
@@ -271,9 +269,12 @@ body {
 .main .main__my-projects .main__my-project-grid-container .main__my-project-item {
   color: #bae8e8;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+}
+.main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-img {
+  border: #2c698d solid 4px;
 }
 .main .main__my-projects .main__my-project-grid-container .main__my-project-item .main__my-project-lang {
   color: #bae8e8;
@@ -409,7 +410,6 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-
   .main .main__intro .main__intro-paragraph {
     font-size: 32px;
   }
@@ -437,7 +437,6 @@ body {
     max-height: 600px;
     padding-right: 20px;
   }
-
   .footer {
     flex-direction: row;
   }
